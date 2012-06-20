@@ -38,6 +38,10 @@ class MobileBrowserDetector {
 	public static function is_windows() {
 		return (preg_match('/(windows ce; ppc;|windows ce; smartphone;|windows ce; iemobile)/i', $_SERVER['HTTP_USER_AGENT'])) ? true : false;
 	}
+	
+	public static function is_ps3() {
+		return (preg_match('/(ps3|playstation 3)/i', $_SERVER['HTTP_USER_AGENT'])) ? true : false;
+	}
 
 	/**
 	 * Is the current HTTP_USER_AGENT a known mobile device string?

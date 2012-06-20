@@ -184,5 +184,15 @@ class MobileSiteControllerExtension extends Extension {
 	public function IsBlackBerry() {
 		return MobileBrowserDetector::is_blackberry();
 	}
+	
+	/**
+	 * Is the current HTTP_USER_AGENT a known Playstation 3
+	 * mobile agent string?
+	 * 
+	 * @return boolean
+	 */
+	public function IsPS3() {
+		return MobileBrowserDetector::is_ps3();
+	}
 
 }
