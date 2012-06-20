@@ -2,7 +2,7 @@
 /**
  * @package mobile
  */
-class MobileSiteTreeExtension extends DataExtension {
+class MobileSiteTreeExtension extends DataObjectDecorator {
 	
 	function MetaTags(&$tags) {
 		$config = SiteConfig::current_site_config();
