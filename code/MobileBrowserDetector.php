@@ -20,7 +20,7 @@ class MobileBrowserDetector {
 	}
 
 	public static function is_iphone() {
-		return (preg_match('/(ipod|iphone)/i', $_SERVER['HTTP_USER_AGENT'])) ? true : false;
+		return (preg_match('/(ipod|iphone|ipad)/i', $_SERVER['HTTP_USER_AGENT'])) ? true : false;
 	}
 
 	public static function is_opera_mini() {
