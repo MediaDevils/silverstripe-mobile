@@ -5,7 +5,7 @@
  *
  * @package mobile
  */
-class MobileSiteConfigExtension extends DataObjectDecorator {
+class MobileSiteConfigExtension extends DataExtension {
 
 	/**
 	 * The path the default mobile theme should be copied
@@ -31,7 +31,7 @@ class MobileSiteConfigExtension extends DataObjectDecorator {
 	/**
 	 * Append Extra Fields onto the {@link SiteConfig}
 	 */
-	public function extraStatics() {
+	public function extraStatics($class = null, $extension = null) {
 		return array(
 			'db' => array(
 				'MobileDomain' => 'Varchar(50)',
