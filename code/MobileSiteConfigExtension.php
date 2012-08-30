@@ -156,7 +156,7 @@ class MobileSiteConfigExtension extends DataExtension {
 	/**
 	 * Append extra fields to the new Mobile tab in the cms.
 	 */
-	public function updateCMSFields($fields) {
+	public function updateCMSFields(FieldList $fields) {
 		$fields->addFieldsToTab(
 			'Root.Mobile',
 			array(
